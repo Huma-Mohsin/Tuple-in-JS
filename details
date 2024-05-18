@@ -1,0 +1,25 @@
+we are using a feature of JavaScript called "tuple-like arrays" or "heterogeneous arrays". This is a way to create an array with a specific structure, where each element has a specific data type.
+
+In my example, I've defined an array student with a specific structure:
+
+- string (name)
+- number (ID)
+- string (city)
+- string (address)
+- string (day)
+- string (time)
+- string (batch)
+- string (email)
+- number (phone number)
+- boolean (some flag)
+
+I am then accessing elements of the array using indices (e.g., student[2] to access the city).
+
+Q: why push pop shift unshift works on tuple?
+
+The interesting part is that I am using array methods like push, pop, shift, unshift, slice, and splice on this tuple-like array. This works because, under the hood, JavaScript is still treating this as an array, and these methods are defined for arrays.
+
+So, in essence, I am leveraging the flexibility of JavaScript arrays to create a data structure that resembles a tuple, while still being able to use array methods to manipulate it.
+
+Keep in mind that it is not a traditional tuple data structure, as it's still an array and can be modified. If we need immutability, we might consider, using alternative data structures or libraries that provide immutable tuple-like structures.
+
